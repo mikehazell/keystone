@@ -303,8 +303,8 @@ Requesting an ID that doesn't exist will return HTTP `404`:
 ```js
 // 404 not found
 {
-	err: 'not found',
-	id: '1234567890'
+	error: 'not found',
+	id: '1234567890',
 }
 ```
 
@@ -313,7 +313,7 @@ Any other error (e.g. database error) will return HTTP `500`:
 ```js
 // 500 database error
 {
-	err: 'database error',
+	error: 'database error',
 	detail: err,
 }
 ```
